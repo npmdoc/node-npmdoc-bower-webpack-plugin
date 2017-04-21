@@ -1,0 +1,702 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/lpiepiora/bower-webpack-plugin"
+
+    >bower-webpack-plugin (v0.1.9)</a>
+</h1>
+<h4>Use bower with webpack</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.bower-webpack-plugin">module bower-webpack-plugin</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bower-webpack-plugin.bower-webpack-plugin">
+            function <span class="apidocSignatureSpan"></span>bower-webpack-plugin
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bower-webpack-plugin.bower_plugin_logger">
+            function <span class="apidocSignatureSpan">bower-webpack-plugin.</span>bower_plugin_logger
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bower-webpack-plugin.bower_plugin_main_resolver">
+            function <span class="apidocSignatureSpan">bower-webpack-plugin.</span>bower_plugin_main_resolver
+            <span class="apidocSignatureSpan">(webpackPlugin, includes, excludes)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bower-webpack-plugin.bower_plugin_manifest_resolver">
+            function <span class="apidocSignatureSpan">bower-webpack-plugin.</span>bower_plugin_manifest_resolver
+            <span class="apidocSignatureSpan">(webpackPlugin, moduleDirectories, manifestFiles)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">bower-webpack-plugin.</span>bower_plugin_logger.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">bower-webpack-plugin.</span>bower_plugin_main_resolver.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">bower-webpack-plugin.</span>bower_plugin_manifest_resolver.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">bower-webpack-plugin.</span>bower_plugin_utils</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.bower-webpack-plugin.bower_plugin_logger">module bower-webpack-plugin.bower_plugin_logger</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bower-webpack-plugin.bower_plugin_logger.bower_plugin_logger">
+            function <span class="apidocSignatureSpan">bower-webpack-plugin.</span>bower_plugin_logger
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.bower-webpack-plugin.bower_plugin_logger.prototype">module bower-webpack-plugin.bower_plugin_logger.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bower-webpack-plugin.bower_plugin_logger.prototype.log">
+            function <span class="apidocSignatureSpan">bower-webpack-plugin.bower_plugin_logger.prototype.</span>log
+            <span class="apidocSignatureSpan">(msg)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bower-webpack-plugin.bower_plugin_logger.prototype.writeOut">
+            function <span class="apidocSignatureSpan">bower-webpack-plugin.bower_plugin_logger.prototype.</span>writeOut
+            <span class="apidocSignatureSpan">(callback)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.bower-webpack-plugin.bower_plugin_main_resolver">module bower-webpack-plugin.bower_plugin_main_resolver</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bower-webpack-plugin.bower_plugin_main_resolver.bower_plugin_main_resolver">
+            function <span class="apidocSignatureSpan">bower-webpack-plugin.</span>bower_plugin_main_resolver
+            <span class="apidocSignatureSpan">(webpackPlugin, includes, excludes)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.bower-webpack-plugin.bower_plugin_main_resolver.prototype">module bower-webpack-plugin.bower_plugin_main_resolver.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bower-webpack-plugin.bower_plugin_main_resolver.prototype.resolve">
+            function <span class="apidocSignatureSpan">bower-webpack-plugin.bower_plugin_main_resolver.prototype.</span>resolve
+            <span class="apidocSignatureSpan">(manifestFile)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.bower-webpack-plugin.bower_plugin_manifest_resolver">module bower-webpack-plugin.bower_plugin_manifest_resolver</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bower-webpack-plugin.bower_plugin_manifest_resolver.bower_plugin_manifest_resolver">
+            function <span class="apidocSignatureSpan">bower-webpack-plugin.</span>bower_plugin_manifest_resolver
+            <span class="apidocSignatureSpan">(webpackPlugin, moduleDirectories, manifestFiles)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.bower-webpack-plugin.bower_plugin_manifest_resolver.prototype">module bower-webpack-plugin.bower_plugin_manifest_resolver.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bower-webpack-plugin.bower_plugin_manifest_resolver.prototype.resolve">
+            function <span class="apidocSignatureSpan">bower-webpack-plugin.bower_plugin_manifest_resolver.prototype.</span>resolve
+            <span class="apidocSignatureSpan">(request, logger)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.bower-webpack-plugin.bower_plugin_utils">module bower-webpack-plugin.bower_plugin_utils</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bower-webpack-plugin.bower_plugin_utils.resolveComponentsDirectory">
+            function <span class="apidocSignatureSpan">bower-webpack-plugin.bower_plugin_utils.</span>resolveComponentsDirectory
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bower-webpack-plugin.bower_plugin_utils.unique">
+            function <span class="apidocSignatureSpan">bower-webpack-plugin.bower_plugin_utils.</span>unique
+            <span class="apidocSignatureSpan">(array)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.bower-webpack-plugin" id="apidoc.module.bower-webpack-plugin">module bower-webpack-plugin</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.bower-webpack-plugin.bower-webpack-plugin" id="apidoc.element.bower-webpack-plugin.bower-webpack-plugin">
+        function <span class="apidocSignatureSpan"></span>bower-webpack-plugin
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function BowerWebpackPlugin(options) {
+  var opt = options || {};
+  this.modulesDirectories = opt.modulesDirectories ? [].concat(opt.modulesDirectories) : [pluginUtils.resolveComponentsDirectory
+()];
+  this.manifestFiles = opt.manifestFiles ? [].concat(opt.manifestFiles) : [&#x22;bower.json&#x22;];
+  this.includes = opt.includes ? [].concat(opt.includes) : [/.*/];
+  this.excludes = opt.excludes ? [].concat(opt.excludes) : [];
+  this.searchResolveModulesDirectories = opt.searchResolveModulesDirectories === false ? false : true;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bower-webpack-plugin.bower_plugin_logger" id="apidoc.element.bower-webpack-plugin.bower_plugin_logger">
+        function <span class="apidocSignatureSpan">bower-webpack-plugin.</span>bower_plugin_logger
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Logger() {
+  if (!(this instanceof Logger)) {
+    return new Logger();
+  }
+
+  this.logData = [];
+
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bower-webpack-plugin.bower_plugin_main_resolver" id="apidoc.element.bower-webpack-plugin.bower_plugin_main_resolver">
+        function <span class="apidocSignatureSpan">bower-webpack-plugin.</span>bower_plugin_main_resolver
+        <span class="apidocSignatureSpan">(webpackPlugin, includes, excludes)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function MainResolver(webpackPlugin, includes, excludes) {
+  if (!(this instanceof MainResolver)) {
+    return new MainResolver(webpackPlugin, includes, excludes);
+  }
+  this.webpackPlugin = webpackPlugin;
+  this.includes = includes;
+  this.excludes = excludes;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bower-webpack-plugin.bower_plugin_manifest_resolver" id="apidoc.element.bower-webpack-plugin.bower_plugin_manifest_resolver">
+        function <span class="apidocSignatureSpan">bower-webpack-plugin.</span>bower_plugin_manifest_resolver
+        <span class="apidocSignatureSpan">(webpackPlugin, moduleDirectories, manifestFiles)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function ManifestResolver(webpackPlugin, moduleDirectories, manifestFiles) {
+  if (!(this instanceof ManifestResolver)) {
+    return new ManifestResolver(webpackPlugin, moduleDirectories, manifestFiles);
+  }
+
+  this.webpackPlugin = webpackPlugin;
+  this.modulesDirectories = moduleDirectories;
+  this.manifestFiles = manifestFiles;
+
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.bower-webpack-plugin.bower_plugin_logger" id="apidoc.module.bower-webpack-plugin.bower_plugin_logger">module bower-webpack-plugin.bower_plugin_logger</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.bower-webpack-plugin.bower_plugin_logger.bower_plugin_logger" id="apidoc.element.bower-webpack-plugin.bower_plugin_logger.bower_plugin_logger">
+        function <span class="apidocSignatureSpan">bower-webpack-plugin.</span>bower_plugin_logger
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Logger() {
+  if (!(this instanceof Logger)) {
+    return new Logger();
+  }
+
+  this.logData = [];
+
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.bower-webpack-plugin.bower_plugin_logger.prototype" id="apidoc.module.bower-webpack-plugin.bower_plugin_logger.prototype">module bower-webpack-plugin.bower_plugin_logger.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.bower-webpack-plugin.bower_plugin_logger.prototype.log" id="apidoc.element.bower-webpack-plugin.bower_plugin_logger.prototype.log">
+        function <span class="apidocSignatureSpan">bower-webpack-plugin.bower_plugin_logger.prototype.</span>log
+        <span class="apidocSignatureSpan">(msg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">log = function (msg) {
+  this.logData.push(&#x22;  &#x22; + msg);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  var webpackPlugin = this.webpackPlugin,
+    fsStat = Q.nbind(webpackPlugin.fileSystem.stat, webpackPlugin.fileSystem);
+
+  function resolveBowerManifest(startBase, modulesDirectories, moduleName, manifestFiles) {
+    var deferred = Q.defer(),
+visited = {};
+
+    logger.<span class="apidocCodeKeywordSpan">log</span>(&#x22;resolve &#x27;bower component&#x27; &#x22; + moduleName + &#x22;
+manifest files using [&#x22; + manifestFiles.join(&#x22;,&#x22;) + &#x22;]&#x22;);
+    logger.log(&#x22;  resolve file&#x22;);
+
+    (function loopDirectoryHierarchy(base) {
+
+// create a copy
+var remainingModulesDirectories = modulesDirectories.slice(0);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bower-webpack-plugin.bower_plugin_logger.prototype.writeOut" id="apidoc.element.bower-webpack-plugin.bower_plugin_logger.prototype.writeOut">
+        function <span class="apidocSignatureSpan">bower-webpack-plugin.bower_plugin_logger.prototype.</span>writeOut
+        <span class="apidocSignatureSpan">(callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">writeOut = function (callback) {
+  if (callback.log) {
+    this.logData.forEach(callback.log, callback);
+  }
+  this.logData.length = 0;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.bower-webpack-plugin.bower_plugin_main_resolver" id="apidoc.module.bower-webpack-plugin.bower_plugin_main_resolver">module bower-webpack-plugin.bower_plugin_main_resolver</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.bower-webpack-plugin.bower_plugin_main_resolver.bower_plugin_main_resolver" id="apidoc.element.bower-webpack-plugin.bower_plugin_main_resolver.bower_plugin_main_resolver">
+        function <span class="apidocSignatureSpan">bower-webpack-plugin.</span>bower_plugin_main_resolver
+        <span class="apidocSignatureSpan">(webpackPlugin, includes, excludes)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function MainResolver(webpackPlugin, includes, excludes) {
+  if (!(this instanceof MainResolver)) {
+    return new MainResolver(webpackPlugin, includes, excludes);
+  }
+  this.webpackPlugin = webpackPlugin;
+  this.includes = includes;
+  this.excludes = excludes;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.bower-webpack-plugin.bower_plugin_main_resolver.prototype" id="apidoc.module.bower-webpack-plugin.bower_plugin_main_resolver.prototype">module bower-webpack-plugin.bower_plugin_main_resolver.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.bower-webpack-plugin.bower_plugin_main_resolver.prototype.resolve" id="apidoc.element.bower-webpack-plugin.bower_plugin_main_resolver.prototype.resolve">
+        function <span class="apidocSignatureSpan">bower-webpack-plugin.bower_plugin_main_resolver.prototype.</span>resolve
+        <span class="apidocSignatureSpan">(manifestFile)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">resolve = function (manifestFile) {
+  var basedir = path.dirname(manifestFile),
+    includes = this.includes,
+    excludes = this.excludes,
+    fileSystem = this.webpackPlugin.fileSystem,
+    readFile = Q.nbind(fileSystem.readFile, fileSystem);
+
+  function includeMatching(file) {
+    var filePath = path.normalize(path.join(basedir, file));
+    return includes.some(function (include) {
+      return include.test(filePath);
+    });
+  }
+
+  function excludeMatching(file) {
+    var filePath = path.normalize(path.join(basedir, file));
+    return excludes.length === 0 || excludes.every(function (exclude) { return !exclude.test(filePath); });
+  }
+
+  return readFile(manifestFile).
+    then(JSON.parse).
+    then(function (jsonManifestFile) {
+      var mainFiles = Array.isArray(jsonManifestFile.main) ? jsonManifestFile.main : [jsonManifestFile.main];
+      return {
+        manifestFile: manifestFile,
+        mainFiles:    mainFiles.filter(includeMatching).filter(excludeMatching)
+      };
+    });
+
+
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+          manifestFile = remainingManifestFiles.shift();
+          filePath = webpackPlugin.join(possibleModulePath, manifestFile);
+
+          fsStat(filePath).then(
+function (stat) {
+  if (!stat.isDirectory()) {
+    return deferred.<span class="apidocCodeKeywordSpan">resolve</span>(filePath);
+  }
+
+  logger.log(&#x22;    &#x22; + filePath + &#x22; was a directory&#x22;);
+  return loopManifestFiles();
+},
+function () {
+  logger.log(&#x22;    &#x22; + filePath + &#x22; doesn&#x27;t exists&#x22;);
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.bower-webpack-plugin.bower_plugin_manifest_resolver" id="apidoc.module.bower-webpack-plugin.bower_plugin_manifest_resolver">module bower-webpack-plugin.bower_plugin_manifest_resolver</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.bower-webpack-plugin.bower_plugin_manifest_resolver.bower_plugin_manifest_resolver" id="apidoc.element.bower-webpack-plugin.bower_plugin_manifest_resolver.bower_plugin_manifest_resolver">
+        function <span class="apidocSignatureSpan">bower-webpack-plugin.</span>bower_plugin_manifest_resolver
+        <span class="apidocSignatureSpan">(webpackPlugin, moduleDirectories, manifestFiles)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function ManifestResolver(webpackPlugin, moduleDirectories, manifestFiles) {
+  if (!(this instanceof ManifestResolver)) {
+    return new ManifestResolver(webpackPlugin, moduleDirectories, manifestFiles);
+  }
+
+  this.webpackPlugin = webpackPlugin;
+  this.modulesDirectories = moduleDirectories;
+  this.manifestFiles = manifestFiles;
+
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.bower-webpack-plugin.bower_plugin_manifest_resolver.prototype" id="apidoc.module.bower-webpack-plugin.bower_plugin_manifest_resolver.prototype">module bower-webpack-plugin.bower_plugin_manifest_resolver.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.bower-webpack-plugin.bower_plugin_manifest_resolver.prototype.resolve" id="apidoc.element.bower-webpack-plugin.bower_plugin_manifest_resolver.prototype.resolve">
+        function <span class="apidocSignatureSpan">bower-webpack-plugin.bower_plugin_manifest_resolver.prototype.</span>resolve
+        <span class="apidocSignatureSpan">(request, logger)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">resolve = function (request, logger) {
+  var webpackPlugin = this.webpackPlugin,
+    fsStat = Q.nbind(webpackPlugin.fileSystem.stat, webpackPlugin.fileSystem);
+
+  function resolveBowerManifest(startBase, modulesDirectories, moduleName, manifestFiles) {
+    var deferred = Q.defer(),
+      visited = {};
+
+    logger.log(&#x22;resolve &#x27;bower component&#x27; &#x22; + moduleName + &#x22; manifest files using [&#x22; + manifestFiles.join(&#x22;,&#x22;) + &#x22;]&#x22;);
+    logger.log(&#x22;  resolve file&#x22;);
+
+    (function loopDirectoryHierarchy(base) {
+
+      // create a copy
+      var remainingModulesDirectories = modulesDirectories.slice(0);
+
+      visited[base] = true;
+
+      (function loopModulesDirectories() {
+        var newBase, lookupPath, possibleModulePath, remainingManifestFiles;
+
+        if (remainingModulesDirectories.length === 0) {
+          newBase = webpackPlugin.normalize(base + path.sep + &#x22;..&#x22;);
+          if (visited.hasOwnProperty(newBase)) {
+            return deferred.reject(new Error(
+              &#x22;No bower component: &#x22; + base + &#x22;/[&#x22; + modulesDirectories.join(&#x22;,&#x22;) + &#x22;]/&#x22; + moduleName + &#x22;/[&#x22; + manifestFiles.join
+(&#x22;,&#x22;) + &#x22;]&#x22;
+            ));
+          }
+
+          return loopDirectoryHierarchy(newBase);
+        }
+
+        lookupPath = remainingModulesDirectories.shift();
+        possibleModulePath = webpackPlugin.join(webpackPlugin.join(base, lookupPath), moduleName);
+        // create a copy
+        remainingManifestFiles = manifestFiles.slice(0);
+
+        (function loopManifestFiles() {
+          var manifestFile, filePath;
+
+          if (remainingManifestFiles.length === 0) {
+            return loopModulesDirectories();
+          }
+
+          manifestFile = remainingManifestFiles.shift();
+          filePath = webpackPlugin.join(possibleModulePath, manifestFile);
+
+          fsStat(filePath).then(
+            function (stat) {
+              if (!stat.isDirectory()) {
+                return deferred.resolve(filePath);
+              }
+
+              logger.log(&#x22;    &#x22; + filePath + &#x22; was a directory&#x22;);
+              return loopManifestFiles();
+            },
+            function () {
+              logger.log(&#x22;    &#x22; + filePath + &#x22; doesn&#x27;t exists&#x22;);
+              return loopManifestFiles();
+            }
+          );
+        }());
+
+      }());
+
+    }(startBase));
+
+    return deferred.promise;
+  }
+
+  return resolveBowerManifest(request.path, this.modulesDirectories, request.request, this.manifestFiles);
+
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+          manifestFile = remainingManifestFiles.shift();
+          filePath = webpackPlugin.join(possibleModulePath, manifestFile);
+
+          fsStat(filePath).then(
+function (stat) {
+  if (!stat.isDirectory()) {
+    return deferred.<span class="apidocCodeKeywordSpan">resolve</span>(filePath);
+  }
+
+  logger.log(&#x22;    &#x22; + filePath + &#x22; was a directory&#x22;);
+  return loopManifestFiles();
+},
+function () {
+  logger.log(&#x22;    &#x22; + filePath + &#x22; doesn&#x27;t exists&#x22;);
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.bower-webpack-plugin.bower_plugin_utils" id="apidoc.module.bower-webpack-plugin.bower_plugin_utils">module bower-webpack-plugin.bower_plugin_utils</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.bower-webpack-plugin.bower_plugin_utils.resolveComponentsDirectory" id="apidoc.element.bower-webpack-plugin.bower_plugin_utils.resolveComponentsDirectory">
+        function <span class="apidocSignatureSpan">bower-webpack-plugin.bower_plugin_utils.</span>resolveComponentsDirectory
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">resolveComponentsDirectory = function () {
+  var fs = require(&#x22;fs&#x22;);
+  var bowerRcFilename = &#x22;.bowerrc&#x22;;
+  var defaultFolder = &#x22;bower_components&#x22;;
+
+  try {
+    // If .bowerrc exists, parse and if set return its directory option.
+    fs.statSync(bowerRcFilename);
+    var bowerRc = JSON.parse(fs.readFileSync(bowerRcFilename));
+    if (bowerRc.directory) {
+      return bowerRc.directory;
+    }
+  } catch (err) {
+    if (err.code !== &#x22;ENOENT&#x22;) {
+      var Logger = require(&#x22;./bower-plugin-logger&#x22;);
+      var logger = new Logger();
+      logger.log(err);
+    }
+  }
+
+  return defaultFolder;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bower-webpack-plugin.bower_plugin_utils.unique" id="apidoc.element.bower-webpack-plugin.bower_plugin_utils.unique">
+        function <span class="apidocSignatureSpan">bower-webpack-plugin.bower_plugin_utils.</span>unique
+        <span class="apidocSignatureSpan">(array)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">unique = function (array) {
+  var u = {}, result = [], arrLen = array.length;
+  for (var i = 0; i &#x3c; arrLen; i++) {
+    if (u.hasOwnProperty(array[i])) {
+      continue;
+    }
+    u[array[i]] = true;
+    result.push(array[i]);
+  }
+  return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
